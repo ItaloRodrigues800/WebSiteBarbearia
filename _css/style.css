@@ -1,0 +1,277 @@
+  @charset "UTF-8";
+  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@300&display=swap');
+
+  /*os (..) É PARA VOLTAR UM PSATA NO ARQUIVO DE IDENTIFICAÇÃO)*/
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    background-color: rgb(0, 0, 0);
+    background-size: 190%;
+    background-image: url(_imagens/12-free-blurred-backgrounds-1549495990.jpg);
+    color: rgb(226, 226, 226);
+  }
+
+  div#interface {
+    width: 1100px;
+    color: white;
+    margin: 10px auto 10px auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 50px;
+    color: rgb(236, 230, 230);
+    text-shadow: black;
+    padding-right: 20px;
+    padding-left: 15px;
+  }
+
+  /*FORMATANDO LINKS */
+  a {
+    color: #00cafd;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  h1 {
+    font-family: 'FontelogoDufless';
+    font-size: 40x;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(32, 32, 32);
+  }
+
+  h1#duflesstitulo {
+    position: relative;
+    right: 45px;
+  }
+
+  h2 {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(238, 238, 238);
+    text-shadow: 10px, 10px, 10px rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+  }
+
+  h3#profissionais {
+    text-align: center;
+  }
+
+  img#icone {
+    position: absolute;
+    padding: auto;
+    left: 1200px;
+    width: 150px;
+  }
+
+  header {
+    border-bottom: 1px black solid;
+    height: 325px;
+  }
+
+  header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: black;
+    padding-left: 23%;
+  }
+
+  figure.foto-legenda {
+    left: 25%;
+    width: 45%;
+    position: relative;
+    border: 5px solid white;
+    box-shadow: 4px 4px 4px black;
+
+  }
+
+  figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+  }
+
+  figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+  }
+
+  figure.foto-legenda:hover figcaption {
+    opacity: 1;
+  }
+
+  /*FORMATAÇÃO DO MENU PRINCIPAL*/
+  nav {
+    display: block;
+    margin: auto white;
+  }
+
+  nav ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 110px;
+    left: 500px;
+  }
+
+  nav li {
+    display: inline-block;
+    background-color: #494949;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 1s;
+  }
+
+  nav li:hover {
+    background-color: #c7c7ce;
+  }
+
+  nav h1 {
+    display: none;
+  }
+
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: rgb(230, 13, 13);
+  }
+
+  /*Organização da SECTION*/
+  section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    border-right: 1px solid black;
+    padding-right: 60px;
+  }
+
+  /*Formatando o article*/
+  article#noticia-principal h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20pt;
+    color: #494949;
+    background-color: #9b9b9b;
+    border-right: 1px solid #9b9b9b;
+    padding: 0px 5px 0px 5px;
+    padding-right: 10px;
+    margin: 20px 20px 20px 20px;
+
+  }
+
+  header#cabecario-arigo h3 {
+    color: white;
+  }
+
+  aside#lateral {
+    display: block;
+    width: 400px;
+    float: left;
+    border: 10px;
+    padding-left: 20px;
+  }
+
+  aside#lateral h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20pt;
+    color: #494949;
+    background-color: #9b9b9b;
+    border-right: 1px solid #9b9b9b;
+    padding: 0px 5px 0px 0px;
+    margin: 20px 20px 20px 20px;
+
+  }
+
+  aside#lateral h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15pt;
+    color: #494949;
+    background-color: #9b9b9b;
+    border-right: 1px solid #9b9b9b;
+    padding: 0px 5px 0px 60px;
+    margin: 20px 20px 20px 20px;
+  }
+
+  footer#rodape {
+    clear: both;
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+
+  footer#rodape p {
+    text-align: center;
+
+  }
+
+  /*formatação tabela*/
+
+  table#tabela {
+    width: 400px;
+
+    border: 1px solid black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table#tabela td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+
+  table#tabela td.ce {
+    color: white;
+    background-color: #494949;
+    font-weight: bold;
+  }
+
+  table#tabela td.cd {
+    color: #000000;
+    background-color: #9b9b9b;
+    font-weight: bold;
+  }
+
+  table#tabela caption span {
+    display: block;
+    float: right;
+    color: #c7c7ce;
+    font-size: 15px;
+    margin-top: 50px;
+  }
+
+  table#tabela caption {
+
+    color: #c7c7ce;
+    font-size: 20px;
+
+  }

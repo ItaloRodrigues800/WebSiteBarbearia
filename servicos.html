@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dufless Barbearia </title>
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/iservicos.css">
+    <style>
+        body {
+            background-image: url("_imagens/12-free-blurred-backgrounds-1549495990.jpg");
+            background-size: 220%;
+        }
+
+        img {
+            width: 500px;
+            margin-left: 100px;
+        }
+
+        p#cliqueS {
+            /* A largura deve ser definida */
+            color: white;
+        }
+
+        img#icone {
+            position: absolute;
+            /* padding: auto; */
+            /* Removido */
+            left: 1100px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecario">
+            <hgroup>
+                <h1 id="duflesstitulo"> D U F L E S S &nbsp; &nbsp; B A R B E A R I A</h1>
+                <img id="icone" src="_imagens/dufless_barbearia.jpg" alt="icone da barbearia">
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ul type="square">
+                        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/chatt.png')">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li onmouseover="mudaFoto('_imagens/servicos.png')" onmouseout="mudaFoto('_imagens/chatt.png')">
+                            <a href="servicos.html">Serviços</a>
+                        </li>
+                        <li onmouseover="mudaFoto('_imagens/foto.png')" onmouseout="mudaFoto('_imagens/chatt.png')">
+                            <a href="fotos.html">Fotos</a>
+                        </li>
+                        <li onmouseover="mudaFoto('_imagens/play.png')" onmouseout="mudaFoto('_imagens/play.png')">
+                            <a href="videos.html">videos</a>
+                        </li>
+                        <li onmouseover="mudaFoto('_imagens/chatt.png')" onmouseout="mudaFoto('_imagens/chatt.png')">
+                            <a href="fale-conosco.html">Fale conosco</a>
+                        </li>
+                    </ul>
+                </nav>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hgroup>
+                    <h3 style> Bem-vindo à nossa barbearia.
+                        Nós oferecemos os melhores serviços de barba <br>
+                        e cabelo em nossa cidade. Venha nos visitar e experimente nossa <br>
+                        qualidade e atendimento excepcional. </h3>
+                    <h3 style="text-align: center;" id="profissionais">por <a
+                            href="https://www.instagram.com/italorodrigues9/" target="_blank">Italo Rodrigues</a> e <a
+                            href="https://www.instagram.com/guizao_h22/" target="_blank">Guilherme Henrique</a> <br>
+                        <u>Atualizado em 11/08/2023</u>
+                    </h3>
+                </hgroup>
+        </header>
+        <article>
+            <p style="text-align: center;" id="cliqueS">CLIQUE SOBRE OS NOMES DO PROCEDIMENTO PARA MAIS INFORMÇÕES</p>
+            <section id="conteudo">
+                <img src="_imagens/Tabela Preço.png" alt="TABELA PROCEDIMENTOS" usemap="#meumapa">
+                <map name="meumapa">
+                    <!-- Coordernadas ajustadas para melhor mapeamento -->
+                    <area shape="rect" coords="52,205,205,265" href="iservicos.html#corte" alt="Infomaçao do serviço"
+                        target="janela" title="corte">
+                    <area shape="rect" coords="48,248,371,313" href="iservicos.html#cortetesoura"
+                        alt="Infomaçao do serviço" target="janela" title="CORTE TESOURA">
+                    <area shape="rect" coords="52,281,242,336" href="iservicos.html#barba" alt="Infomaçao do serviço"
+                        target="janela" title="Barba">
+                    <area shape="rect" coords="50,312,376,385" href="iservicos.html#barbo" alt="Infomaçao do serviço"
+                        target="janela" title="Barboterapia">
+                    <area shape="rect" coords="45,371,352,427" href="iservicos.html#hidratacao"
+                        alt="Infomaçao do serviço" target="janela" title="Hidratacao">
+                    <area shape="rect" coords="47,413,200,437" href="iservicos.html#luzes" alt="Infomaçao do serviço"
+                        target="janela" title="Luzes">
+                    <area shape="rect" coords="35,437,285,500" href="iservicos.html#platinado"
+                        alt="Infomaçao do serviço" target="janela" title="Platinado">
+                    <area shape="rect" coords="48,460,320,525" href="iservicos.html#relaxamento"
+                        alt="Infomaçao do serviço" target="janela" title="Relaxamento">
+                    <area shape="rect" coords="51,500,350,550" href="iservicos.html#sobrancelha"
+                        alt="Infomaçao do serviço" target="janela" title="Sobracelha">
+                    <area shape="rect" coords="37,580,420,600" href="iservicos.html#acabamento"
+                        alt="Infomaçao do serviço" target="janela" title="Acabamento">
+                    <area shape="rect" coords="40,600,471,650" href="iservicos.html#mascarapreta"
+                        alt="Infomaçao do serviço" target="janela" title="Máscara Preta">
+                    <area shape="rect" coords="44,620,471,670" href="iservicos.html#pigbarba" alt="Infomaçao do serviço"
+                        target="janela" title="Pigmentação Barba">
+                    <area shape="rect" coords="44,685,471,700" href="iservicos.html#pigcabelo"
+                        alt="Infomaçao do serviço" target="janela" title="Pigmentação cabelo">
+                    <area shape="rect" coords="48,700,471,750" href="iservicos.html#aptinta" alt="Infomaçao do serviço"
+                        target="janela" title="Aplicação de tinta">
+                </map>
+                <iframe src="iservicos.html" name="janela" id="frame-iservicos" scrolling="no"></iframe>
+            </section>
+        </article>
+
+        <footer id="rodape">
+            <P>Copyright &copy; 2023 - by Dufless Barbearia <br />
+                <a href="https://www.instagram.com/dufless_barbearia/" target="_blank"> Instagram</a>
+            </P>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dufless Barbearia </title>
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/form.css">
+    <style>
+        body {
+            background-image: url(_imagens/12-free-blurred-backgrounds-1549495990.jpg);
+            background-size: 220%;
+        }
+    </style>
+</head>
+<script language="javascript" src="_JavaScript/funcoes.js"></script>
+<script>
+    function cal_total() {
+        var qtd = parseInt(document.getElementById('cQtd').value)
+        tot = qtd * 25;
+        document.getElementById('cTot').value = tot;
+    }
+</script>
+
+<body>
+    <div id="interface">
+        <header id=" cabecario">
+            <hgroup>
+                <h1 id="duflesstitulo"> D U F L E S S &nbsp; &nbsp; B A R B E A R I A</h1>
+                <img id="icone" src="_imagens/dufless_barbearia.jpg" alt="icone da barbearia">
+                <nav>
+                    <h1>Menu Principal</h1>
+                    <ul type="square">
+                        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/chatt.png')"> <a
+                                href="index.html">Home</a></li>
+                        <li onmouseover="mudaFoto('_imagens/servicos.png')" onmouseout="mudaFoto('_imagens/chatt.png')">
+                            <a href="servicos.html">Serviços</a>
+                        </li>
+                        <li onmouseover="mudaFoto('_imagens/foto.png')" onmouseout="mudaFoto('_imagens/chatt.png')"> <a
+                                href="fotos.html">Fotos</a></li>
+                        <li onmouseover="mudaFoto('_imagens/play.png')" onmouseout="mudaFoto('_imagens/play.png')"> <a
+                                href="videos.html">videos</a></li>
+                        <li onmouseover="mudaFoto('_imagens/chatt.png')" onmouseout="mudaFoto('_imagens/chatt.png')"> <a
+                                href="fale-conosco.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hgroup>
+                    <h3 style> Bem-vindo à nossa barbearia.
+                        Nós oferecemos os melhores serviços de barba <br>
+                        e cabelo em nossa cidade. Venha nos visitar e experimente nossa <br>
+                        qualidade e atendimento excepcional. </h3>
+                    <h3 style="text-align: center;" id="profissionais">por <a
+                            href="https://www.instagram.com/italorodrigues9/" target="_blank">Italo Rodrigues</a> e <a
+                            href="https://www.instagram.com/guizao_h22/" target="_blank">Guilherme Henrique</a> <br>
+                        <u>Atualizado em 11/08/2023</u>
+                    </h3>
+                </hgroup>
+        </header>
+
+        <form method="post" id="fContato" action="duflessbarbearia@gmail.com" oninput="cal_total();">
+            <fieldset id="usuario">
+                <legend>Identificação do Usuário</legend>
+                <p><label for="cNome"> Nome: </label> <input type="text" name="tNome" id="cNome" size="20"
+                        maxlength="30" placeholder="Nome e Sobrenome" /> </p>
+                <p><label for="cSenha"> Senha: </label> <input type="password" name="tSenha" id="cSenha" size="20"
+                        maxlength="8" placeholder="Apenas 8 digitos"></p>
+                <p><label for="cMail"> E-mail: </label> <input type="email" name="tMail" id="cMail" size="20"
+                        maxlength="40"> </p>
+                <fieldset id="sexo">
+                    <legend>Sexo</legend>
+                    <input type="radio" name="tSexo" id="cMas" checked /> <label for="cMas"> Masculino </label>
+                    <input type="radio" name="tSexo" id="cFem" /> <label for="cFem"> Feminino </label>
+                </fieldset>
+
+                <p><label for="cNasc"> Data de Nascimento: </label> <input type="date" name="tNasc" id="cNasc"></p>
+            </fieldset>
+
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+                <p><label for=""> Endereço: </label> <input type="text" name="tRua" id="cRua" size="12" maxlength="80"
+                        placeholder="Rua,AV..."></p>
+                <p><label for="cNum"> Número: </label> <input type="number" name="tNum" id="cNum" min="0" max="99999"
+                        placeholder="Num"></p>
+                <P><label for="cEst">Estado:</label> <select name="tEst" id="cEst">
+                        <optgroup label="Sudeste">
+                            <option selected value="Minas Gerais"> MG</option>
+                            <option value="Rio de Janeiro"> RJ</option>
+                            <option value="São Paulo"> SP</option>
+                            <option> ES</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option> RS</option>
+                            <option> SC</option>
+                            <option> PR</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                            <option> MS</option>
+                            <option> GO</option>
+                            <option> MT</option>
+                            <option> DF</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option> BA</option>
+                            <option> SE</option>
+                            <option> AL</option>
+                            <option> PE</option>
+                            <option> PB</option>
+                            <option> RN</option>
+                            <option> CE</option>
+                            <option> PI</option>
+                            <option> MA</option>
+                        </optgroup>
+                        <optgroup label="Norte">
+                            <option> PA</option>
+                            <option> AP</option>
+                            <option> AM</option>
+                            <option> RR</option>
+                            <option> TO</option>
+                            <option> RO</option>
+                            <option> AC</option>
+                        </optgroup>
+                    </select> </P>
+                <p><label for="cCid">Cidade:</label> <input type="text" name="cCid" size="12" maxlength="40"
+                        placeholder="Digite sua cidade"> </p>
+            </fieldset>
+
+            <fieldset id="mensagem">
+                <legend>Mensagem do Usuário</legend>
+                <p><label for="cUrg">Grau de Urgência:</label> Mín <input type="range" name="tUrg" id="cUrg" min="0"
+                        max="10" step="5"> Máx</p>
+                <p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMgs" cols="30" rows="5"
+                        placeholder="Deixe sua mensagem com as informações"></textarea> </p>
+            </fieldset>
+
+            <fieldset id="pedido">
+                <legend>Quero um Horário/Procedimentos</legend>
+                <p><input type="checkbox" name="tPed" id="cPed" checked>
+                    <label for="cped">Gostaria de uma horario assim que disponivel</label>
+                </p>
+                <p> <label for="cProc"> Procedimentos:</label> <select name="tProc" id="cProc">
+                        <option>Corte</option>
+                        <option>Corte Tesoura</option>
+                        <option>Barba</option>
+                        <option>Barboterapia</option>
+                        <option>Hidratação</option>
+                        <option>Luzes</option>
+                        <option>Platinado</option>
+                        <option>Relaxamento</option>
+                        <option>Sobrancelha</option>
+                        <option>Acabamento(pezinho)</option>
+                        <option>Máscara Preta</option>
+                        <option>Pigmentação</option>
+                        <option>Pigmentação Barba</option>
+                        <option>Aplicação de Tinta</option>
+
+                    </select>
+                    <label for="c+Proc">+ </label><select name="t+Proc" id="c+Proc"></label>
+                        <option>Nenhum</option>
+                        <option>Corte</option>
+                        <option>Corte Tesoura</option>
+                        <option>Barba</option>
+                        <option>Barboterapia</option>
+                        <option>Hidratação</option>
+                        <option>Luzes</option>
+                        <option>Platinado</option>
+                        <option>Relaxamento</option>
+                        <option>Sobrancelha</option>
+                        <option>Acabamento(pezinho)</option>
+                        <option>Máscara Preta</option>
+                        <option>Pigmentação</option>
+                        <option>Pigmentação Barba</option>
+                        <option>Aplicação de Tinta</option>
+                    </select>
+
+                    <label for="C+Proc">+ </label><select name="T+Proc" id="C+Proc"></label>
+                        <option>Nenhum</option>
+                        <option>Corte</option>
+                        <option>Corte Tesoura</option>
+                        <option>Barba</option>
+                        <option>Barboterapia</option>
+                        <option>Hidratação</option>
+                        <option>Luzes</option>
+                        <option>Platinado</option>
+                        <option>Relaxamento</option>
+                        <option>Sobrancelha</option>
+                        <option>Acabamento(pezinho)</option>
+                        <option>Máscara Preta</option>
+                        <option>Pigmentação</option>
+                        <option>Pigmentação Barba</option>
+                        <option>Aplicação de Tinta</option>
+                    </select>
+                <fieldset>
+                    <p><label for="cQtd">Quantidade de pessoas:</label> <input type="number" name="tQtd" id="cQtd"
+                            min="1" max="5"></p>
+                    <p><label>Preço Total: R$ </label> <input type="text" name="tTot" id="cTot"
+                            placeholder="Total a Pagar" readonly></p>
+                    <a href="fale-conosco.html"><input type="button" value="Enviar"></a>
+                </fieldset>
+
+        </form>
+
+
+        <footer id="rodape">
+            <P>Copyright &copy; 2023 - by Dufless Barbearia <br />
+                <a href="https://www.instagram.com/dufless_barbearia/" target="_blank"> Instagram</a>
+            </P>
+
+        </footer>
+    </div>
+</body>
+
+</html>
